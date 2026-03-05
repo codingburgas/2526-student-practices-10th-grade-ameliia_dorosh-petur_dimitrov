@@ -130,12 +130,12 @@
     <ClCompile Include="cinemaMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cinemaMain.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\cinemaLib\cinemaLib.vcxproj">
       <Project>{3cb71ec6-5a23-49c2-9301-3e81ae284f9a}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="cinemaMain.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
