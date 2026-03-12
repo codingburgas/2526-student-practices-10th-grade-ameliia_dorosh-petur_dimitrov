@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Pepi/Documents/kino-plex
+# Install script for directory: C:/Users/Pepi/Documents/kino-plex/kino-plex
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

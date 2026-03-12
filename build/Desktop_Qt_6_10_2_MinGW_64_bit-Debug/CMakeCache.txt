@@ -368,7 +368,7 @@ kino-plex_BINARY_DIR:STATIC=C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6
 kino-plex_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-kino-plex_SOURCE_DIR:STATIC=C:/Users/Pepi/Documents/kino-plex
+kino-plex_SOURCE_DIR:STATIC=C:/Users/Pepi/Documents/kino-plex/kino-plex
 
 
 ########################
@@ -439,7 +439,7 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/Pepi/Documents/kino-plex
+CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/Pepi/Documents/kino-plex/kino-plex
 //ADVANCED property for variable: CMAKE_INSTALL_BINDIR
 CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_DATADIR

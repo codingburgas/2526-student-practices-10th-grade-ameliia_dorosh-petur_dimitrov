@@ -372,7 +372,7 @@ pages_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/pages/pages_autogen/moc_predefs.h \
-	C:/Users/Pepi/Documents/kino-plex/pages/CMakeLists.txt \
-	C:/Users/Pepi/Documents/kino-plex/pages/logandregisterpage.cpp \
-	C:/Users/Pepi/Documents/kino-plex/pages/logandregisterpage.h \
+	C:/Users/Pepi/Documents/kino-plex/kino-plex/pages/CMakeLists.txt \
+	C:/Users/Pepi/Documents/kino-plex/kino-plex/pages/logandregisterpage.cpp \
+	C:/Users/Pepi/Documents/kino-plex/kino-plex/pages/logandregisterpage.h \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

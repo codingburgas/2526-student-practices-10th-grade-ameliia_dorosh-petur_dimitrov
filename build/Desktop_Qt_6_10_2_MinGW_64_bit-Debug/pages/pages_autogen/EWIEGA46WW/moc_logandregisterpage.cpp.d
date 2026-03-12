@@ -1,4 +1,4 @@
-C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/pages/pages_autogen/EWIEGA46WW/moc_logandregisterpage.cpp: C:/Users/Pepi/Documents/kino-plex/pages/logandregisterpage.h \
+C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/pages/pages_autogen/EWIEGA46WW/moc_logandregisterpage.cpp: C:/Users/Pepi/Documents/kino-plex/kino-plex/pages/logandregisterpage.h \
   C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/pages/pages_autogen/moc_predefs.h \
   C:/Qt/6.10.2/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.10.2/mingw_64/include/QtCore/q20functional.h \

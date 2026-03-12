@@ -3,17 +3,17 @@
 	"BUILD_DIR" : "C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/pages/pages_autogen",
 	"CMAKE_BINARY_DIR" : "C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug",
 	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/pages",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Pepi/Documents/kino-plex/pages",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Pepi/Documents/kino-plex/kino-plex/pages",
 	"CMAKE_EXECUTABLE" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
-	"CMAKE_LIST_FILES" : [ "C:/Users/Pepi/Documents/kino-plex/pages/CMakeLists.txt" ],
-	"CMAKE_SOURCE_DIR" : "C:/Users/Pepi/Documents/kino-plex",
+	"CMAKE_LIST_FILES" : [ "C:/Users/Pepi/Documents/kino-plex/kino-plex/pages/CMakeLists.txt" ],
+	"CMAKE_SOURCE_DIR" : "C:/Users/Pepi/Documents/kino-plex/kino-plex",
 	"CROSS_CONFIG" : false,
 	"DEP_FILE" : "C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/pages/pages_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "pages_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/Pepi/Documents/kino-plex/pages/logandregisterpage.h",
+			"C:/Users/Pepi/Documents/kino-plex/kino-plex/pages/logandregisterpage.h",
 			"Mu",
 			"EWIEGA46WW/moc_logandregisterpage.cpp",
 			null
@@ -44,7 +44,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"C:/Users/Pepi/Documents/kino-plex/pages",
+		"C:/Users/Pepi/Documents/kino-plex/kino-plex/pages",
 		"C:/Qt/6.10.2/mingw_64/include/QtWidgets",
 		"C:/Qt/6.10.2/mingw_64/include",
 		"C:/Qt/6.10.2/mingw_64/include/QtCore",
@@ -91,7 +91,7 @@
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/Pepi/Documents/kino-plex/pages/logandregisterpage.cpp",
+			"C:/Users/Pepi/Documents/kino-plex/kino-plex/pages/logandregisterpage.cpp",
 			"Mu",
 			null
 		]
