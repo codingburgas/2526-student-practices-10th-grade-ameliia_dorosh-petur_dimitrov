@@ -1,0 +1,157 @@
+/* =========================
+   GLOBAL
+========================= */
+
+QWidget {
+    background-color: #0f1115;
+    color: #e6e6e6;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    font-size: 13px;
+}
+
+/* =========================
+   TOP NAVBAR
+========================= */
+
+#topBar {
+    background-color: #15181e;
+    border-bottom: 1px solid #22262e;
+}
+
+QPushButton#navButton {
+    background-color: transparent;
+    border: none;
+    color: #c9c9c9;
+    padding: 8px 16px;
+}
+
+QPushButton#navButton:hover {
+    color: white;
+}
+
+QPushButton#navButtonActive {
+    background-color: #e11b22;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+/* =========================
+   SEARCH FIELD
+========================= */
+
+QLineEdit#searchBar {
+    background-color: #1a1e24;
+    border: 1px solid #2b3038;
+    border-radius: 4px;
+    padding: 6px 10px;
+    color: #e6e6e6;
+}
+
+QLineEdit#searchBar:focus {
+    border: 1px solid #e11b22;
+}
+
+/* =========================
+   SECTION TITLES
+========================= */
+
+QLabel#sectionTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* =========================
+   MOVIE CARD
+========================= */
+
+QFrame#movieCard {
+    background-color: #171a20;
+    border-radius: 6px;
+    border: 1px solid #232831;
+}
+
+QFrame#movieCard:hover {
+    border: 1px solid #e11b22;
+}
+
+/* Poster */
+QLabel#posterImage {
+    border-radius: 4px;
+}
+
+/* Movie title */
+QLabel#movieTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+/* Genre text */
+QLabel#movieGenre {
+    color: #9aa3ad;
+    font-size: 12px;
+}
+
+/* Duration text */
+QLabel#movieDuration {
+    color: #8b949e;
+    font-size: 11px;
+}
+
+/* =========================
+   RATING BADGE
+========================= */
+
+QLabel#ratingBadge {
+    background-color: #e11b22;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+/* =========================
+   4K BADGE
+========================= */
+
+QLabel#qualityBadge {
+    background-color: transparent;
+    border: 1px solid #3a404a;
+    border-radius: 3px;
+    padding: 2px 4px;
+    font-size: 10px;
+    color: #9aa3ad;
+}
+
+/* =========================
+   SCROLL AREA
+========================= */
+
+QScrollArea {
+    border: none;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+QScrollBar:vertical {
+    background: #121417;
+    width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    background: #2c313a;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #3b404a;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+}
