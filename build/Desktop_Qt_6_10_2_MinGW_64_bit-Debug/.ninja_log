@@ -1,12 +1,12 @@
 # ninja log v6
-24	1156	7950409331015827	pages/pages_autogen/timestamp	db92f3920523bf74
 24	1156	7950409331015827	pages/pages_autogen/mocs_compilation.cpp	db92f3920523bf74
+24	1156	7950409331015827	pages/pages_autogen/timestamp	db92f3920523bf74
+5272	6457	7950409383278401	kino-plex_autogen/timestamp	d3b7dcbee65bdbf2
 24	1156	7950409331015827	C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/pages/pages_autogen/timestamp	db92f3920523bf74
 24	1156	7950409331015827	C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/pages/pages_autogen/mocs_compilation.cpp	db92f3920523bf74
 1164	5082	7950409332151960	pages/CMakeFiles/pages.dir/pages_autogen/mocs_compilation.cpp.obj	20013d615c41724e
 1170	5109	7950409332203932	pages/CMakeFiles/pages.dir/logandregisterpage.cpp.obj	71fc1e30dbfb6c82
 5110	5272	7950409371611867	pages/libpages.a	c229d7f4f3311dfc
-5272	6457	7950409383278401	kino-plex_autogen/timestamp	d3b7dcbee65bdbf2
 5272	6457	7950409383278401	kino-plex_autogen/mocs_compilation.cpp	d3b7dcbee65bdbf2
 5272	6457	7950409383278401	C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/kino-plex_autogen/timestamp	d3b7dcbee65bdbf2
 5272	6457	7950409383278401	C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/kino-plex_autogen/mocs_compilation.cpp	d3b7dcbee65bdbf2
@@ -17,3 +17,13 @@
 6595	11950	7950409386455087	CMakeFiles/kino-plex.dir/mainwindow.cpp.obj	3532b6733e71f031
 6587	12357	7950409386387167	CMakeFiles/kino-plex.dir/main.cpp.obj	6e57ea5b9d158ef4
 12358	12848	7950409444090389	kino-plex.exe	3b3b38e8caddd455
+39	1303	7950433054600141	kino-plex_autogen/timestamp	d3b7dcbee65bdbf2
+39	1303	7950433054600141	kino-plex_autogen/mocs_compilation.cpp	d3b7dcbee65bdbf2
+39	1303	7950433054600141	C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/kino-plex_autogen/timestamp	d3b7dcbee65bdbf2
+39	1303	7950433054600141	C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/kino-plex_autogen/mocs_compilation.cpp	d3b7dcbee65bdbf2
+1336	1487	7950433056348409	CMakeFiles/kino-plex.dir/kino-plex_autogen/EWIEGA46WW/qrc_resources.cpp.obj	804d1283b71118f6
+1329	5825	7950433056271881	CMakeFiles/kino-plex.dir/database/database.cpp.obj	884bf79440c3feae
+1306	5958	7950433056044964	CMakeFiles/kino-plex.dir/kino-plex_autogen/mocs_compilation.cpp.obj	f86d390501dda892
+1322	6193	7950433056201933	CMakeFiles/kino-plex.dir/mainwindow.cpp.obj	15ec0d99cdd76af4
+1314	6539	7950433056121086	CMakeFiles/kino-plex.dir/main.cpp.obj	c73feb9f32570bd3
+6539	6875	7950433108369680	kino-plex.exe	7b2b9df82448bba5

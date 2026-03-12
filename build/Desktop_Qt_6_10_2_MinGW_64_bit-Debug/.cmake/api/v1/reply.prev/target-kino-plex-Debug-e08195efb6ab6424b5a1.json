@@ -305,6 +305,10 @@
 				},
 				{
 					"backtrace" : 6,
+					"define" : "QT_SQL_LIB"
+				},
+				{
+					"backtrace" : 6,
 					"define" : "QT_WIDGETS_LIB"
 				},
 				{
@@ -366,6 +370,11 @@
 					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "C:/Qt/6.10.2/mingw_64/include/QtGui"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.10.2/mingw_64/include/QtSql"
 				}
 			],
 			"language" : "CXX",
@@ -390,15 +399,15 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "kino-plex_autogen::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 6,
 			"id" : "pages::@9df13ddeb1e47e4609dc"
 		},
 		{
 			"id" : "kino-plex_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "kino-plex_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "kino-plex::@6890427a1f51a3e7e1df",
@@ -427,6 +436,11 @@
 			{
 				"fragment" : "-mwindows",
 				"role" : "flags"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "C:\\Qt\\6.10.2\\mingw_64\\lib\\libQt6Sql.a",
+				"role" : "libraries"
 			},
 			{
 				"backtrace" : 6,
