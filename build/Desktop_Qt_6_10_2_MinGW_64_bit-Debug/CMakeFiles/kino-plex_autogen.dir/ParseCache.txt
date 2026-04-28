@@ -379,5 +379,5 @@ C:/Users/Pepi/Documents/kino-plex/kino-plex/mainwindow.h
  mdp:C:/Users/Pepi/Documents/kino-plex/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/kino-plex_autogen/moc_predefs.h
  mdp:C:/Users/Pepi/Documents/kino-plex/kino-plex/mainwindow.h
 C:/Users/Pepi/Documents/kino-plex/kino-plex/database/database.cpp
-C:/Users/Pepi/Documents/kino-plex/kino-plex/main.cpp
 C:/Users/Pepi/Documents/kino-plex/kino-plex/mainwindow.cpp
+C:/Users/Pepi/Documents/kino-plex/kino-plex/main.cpp
