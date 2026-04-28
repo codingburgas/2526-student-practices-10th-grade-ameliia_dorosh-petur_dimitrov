@@ -1,22 +1,24 @@
 #pragma once
 
-#include <QWidget>
+#include <QObject>
 
-class Database : public QWidget
+class Database
 {
-    Q_OBJECT
 public:
     static Database& createInstance();
     bool initialize();
     bool createUsersTable();
-    QString hashPassword(const QString& plainPass) const;
     bool registerUser(const QString& username, const QString& plainPass);
     bool validateLogin(const QString& username, const QString& plainPass);
     void close();
 
 private:
-    explicit Database(QWidget *parent = nullptr);
+    explicit Database();
     ~Database();
+    QString hashPassword(const QString& plainPass) const;
+
+protected:
+    QString connectionName = "kino-plex-connection";
 
 signals:
 };

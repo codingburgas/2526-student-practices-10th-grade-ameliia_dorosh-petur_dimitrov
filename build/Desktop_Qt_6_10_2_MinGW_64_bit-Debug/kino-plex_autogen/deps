@@ -153,7 +153,6 @@ kino-plex_autogen/timestamp: \
 	C:/Qt/6.10.2/mingw_64/include/QtGui/qwindowdefs.h \
 	C:/Qt/6.10.2/mingw_64/include/QtGui/qwindowdefs_win.h \
 	C:/Qt/6.10.2/mingw_64/include/QtWidgets/QMainWindow \
-	C:/Qt/6.10.2/mingw_64/include/QtWidgets/QWidget \
 	C:/Qt/6.10.2/mingw_64/include/QtWidgets/qmainwindow.h \
 	C:/Qt/6.10.2/mingw_64/include/QtWidgets/qsizepolicy.h \
 	C:/Qt/6.10.2/mingw_64/include/QtWidgets/qtabwidget.h \
