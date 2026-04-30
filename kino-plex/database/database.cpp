@@ -34,12 +34,13 @@ bool Database::initialize(){
     if (db.open()){
         return true;
     }
+
     qDebug() << "APP DIR:" << QCoreApplication::applicationDirPath();
     qDebug() << "DB PATH:" << dbPath;
     qDebug() << "FOLDER EXISTS?" << QDir(QCoreApplication::applicationDirPath() + "/data").exists();
 
+    qDebug() << "initialize failed initialization of DB file";
     return false;
-    // #TODO - 1
 }
 
 bool Database::createUsersTable(){
@@ -57,28 +58,72 @@ bool Database::createUsersTable(){
         return true;
     }
 
+    qDebug() << "createUserTable failed to create table";
     return false;
     //I should actually implement a way of showing the error tbh #TODO - 1
 }
 
 QString Database::hashPassword(const QString& plainPass) const{
-    // return sha256 hex string
-    return QString();
+    //Australopithecus afarensis (I hashed the salt :))
+    QByteArray saltHash = QCryptographicHash::hash("Australopithecus afarensis", QCryptographicHash::Sha256);
+    QByteArray pass = saltHash + plainPass.toUtf8();
+    QByteArray hashPass = QCryptographicHash::hash(pass, QCryptographicHash::Sha256);
+    return QString(hashPass);
 }
 
 bool Database::registerUser(const QString& username, const QString& plainPass){
-    // prepare INSERT query and bind values
     QSqlDatabase db = QSqlDatabase::database(connectionName);
     QSqlQuery sqlQuery(db);
-
+    
+    if (username == nullptr || plainPass.size() <= 8){
+        qDebug() << "Bad credentials";
+        return false;
+    }
+    
+    QString hashPass = hashPassword(plainPass);
+    
+    sqlQuery.prepare("INSERT INTO users (username, password) VALUES (:username, :pass)");
+    sqlQuery.bindValue(":user", username.trimmed());
+    sqlQuery.bindValue(":user", hashPass);
+    
     return true;
 }
 
 bool Database::validateLogin(const QString& username, const QString& plainPass){
-    // select stored hash and compare
     QSqlDatabase db = QSqlDatabase::database(connectionName);
+    QSqlQuery sqlQuery(db);
 
-    return false;
+    QString hashPass = hashPassword(plainPass);
+
+    QString user = username.trimmed();
+
+    if (user.isEmpty() || plainPass.isEmpty() || plainPass.size() <= 8){
+        qDebug() << "Invalid credentials";
+        return false;
+    }
+
+    sqlQuery.prepare("SELECT password FROM users WHERE username = :placeholder LIMIT 1");
+    sqlQuery.bindValue(":u", user);
+
+    if (!sqlQuery.exec()){
+        qDebug() << "validateLogin: query hasnt executed properly";
+        return false;
+    }
+
+    if (!sqlQuery.next()){
+        qDebug() << "validateLogin: no such username registered";
+        return false;
+    }
+
+    const QString storedHash = sqlQuery.value(0).toString();
+
+    if (storedHash == hashPass){
+        return true;
+    }else{
+        qDebug() << "Wrond password broski";
+        return false;
+    }
+
 }
 
 void Database::close(){
@@ -87,9 +132,9 @@ void Database::close(){
 
     if (db.isOpen()){
         db.close();
-        std::cout << "Closed DB (WAS ACTIVE)" << std::endl;
+        qDebug() << "Closed DB (WAS ACTIVE)";
     }else{
-        std::cout << "Closed DB (WAS NOT ACTIVE)" << std::endl;
+        qDebug() << "Closed DB (WAS NOT ACTIVE)";
     }
 
 }
