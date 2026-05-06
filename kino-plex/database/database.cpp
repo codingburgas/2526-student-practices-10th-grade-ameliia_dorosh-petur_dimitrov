@@ -7,10 +7,6 @@
 #include <QCoreApplication>
 #include <QDir>
 
-
-#include <iostream>
-
-
 Database::Database(){
     initialize();
     createUsersTable();
@@ -75,17 +71,22 @@ bool Database::registerUser(const QString& username, const QString& plainPass){
     QSqlDatabase db = QSqlDatabase::database(connectionName);
     QSqlQuery sqlQuery(db);
     
-    if (username == nullptr || plainPass.size() <= 8){
+    if (username.trimmed().isEmpty() || plainPass.size() <= 8){
         qDebug() << "Bad credentials";
         return false;
     }
-    
+
     QString hashPass = hashPassword(plainPass);
-    
+
     sqlQuery.prepare("INSERT INTO users (username, password) VALUES (:username, :pass)");
-    sqlQuery.bindValue(":user", username.trimmed());
-    sqlQuery.bindValue(":user", hashPass);
-    
+    sqlQuery.bindValue(":username", username.trimmed());
+    sqlQuery.bindValue(":pass", hashPass);
+
+    if (!sqlQuery.exec()){
+        qDebug() << "registerUser: failed to insert user:" << sqlQuery.lastError().text();
+        return false;
+    }
+
     return true;
 }
 
@@ -103,7 +104,7 @@ bool Database::validateLogin(const QString& username, const QString& plainPass){
     }
 
     sqlQuery.prepare("SELECT password FROM users WHERE username = :placeholder LIMIT 1");
-    sqlQuery.bindValue(":u", user);
+    sqlQuery.bindValue(":placeholder", user);
 
     if (!sqlQuery.exec()){
         qDebug() << "validateLogin: query hasnt executed properly";
