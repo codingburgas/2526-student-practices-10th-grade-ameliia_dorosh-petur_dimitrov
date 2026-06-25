@@ -1,0 +1,14 @@
+[
+  {
+    "id": "m1",
+    "title": "The Example Adventure",
+    "description": "A family-friendly adventure where characters learn the value of teamwork.",
+    "duration": 102
+  },
+  {
+    "id": "m2",
+    "title": "Space Lessons",
+    "description": "An exciting sci-fi journey through the stars.",
+    "duration": 128
+  }
+]

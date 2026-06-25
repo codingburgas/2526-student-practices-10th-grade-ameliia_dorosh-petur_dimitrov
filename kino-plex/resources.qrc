@@ -2,4 +2,7 @@
     <qresource lang="qss" prefix="/styles">
         <file>styles/app.qss</file>
     </qresource>
+    <qresource prefix="/data">
+        <file>pages/data/movies.json</file>
+    </qresource>
 </RCC>

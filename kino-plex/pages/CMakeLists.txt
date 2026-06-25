@@ -1,5 +1,13 @@
 add_library(pages STATIC
     logandregisterpage.cpp
+    movielistpage.cpp
+    movielistpage.h
+    moviedetailspage.cpp
+    moviedetailspage.h
+    seatselectionpage.cpp
+    seatselectionpage.h
+    checkoutpage.cpp
+    checkoutpage.h
     logandregisterpage.h
 )
 
